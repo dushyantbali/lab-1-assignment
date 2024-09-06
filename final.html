@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -25,7 +26,7 @@
         }
     </style>
 </head>
-<body data-new-gr-c-s-check-loaded="14.1193.0" data-gr-ext-installed="" style="">
+<body>
     <table id="myTable">
         <tr>
             <td>Row1 Col1</td>
@@ -56,7 +57,7 @@
         <button onclick="insertRow()">Insert row</button>
         <button onclick="deleteRow()">delete row</button>
     </div>
-    <div class="message" id="message">Message:</div>
+    <p id="message" ></p>
 
     <script>
         function insertRow() {
@@ -67,7 +68,7 @@
             var cell2 = row.insertCell(1);
             cell1.innerHTML = "Row" + (rowCount + 1) + " Col1";
             cell2.innerHTML = "Row" + (rowCount + 1) + " Col2";
-            document.getElementById("message").innerHTML = "Message:";
+            document.getElementById("message").innerHTML = "";
         }
 
         function deleteRow() {
